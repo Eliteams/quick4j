@@ -1,0 +1,4 @@
+<h1>List of objects</h1>
+<ul>
+	<% _.each(examples, function(example) { %><li><a href="#example/<%= example.id %>"><%= example.get("name") %></li></a><% }); %>
+</ul>

@@ -1,0 +1,11 @@
+# Project ignore files
+/.settings
+/.classpath
+/.project
+/.tomcatplugin
+/target
+/work
+/src/main/webapp/.#webclasspath
+
+.idea
+quick4j.iml

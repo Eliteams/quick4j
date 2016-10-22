@@ -1,0 +1,11 @@
+{
+  "name": "bootstrap-markdown",
+  "version": "2.1.0",
+  "main": ["./js/bootstrap-markdown.js", "./css/bootstrap-markdown.min.css"],
+  "dependencies": {
+    "bootstrap": "~3.0.0"
+  },
+  "devDependencies": {
+  	"markdown":"~0.4.0"
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Password Strength Meter Custom Rules Example</title>
+    <link rel="stylesheet" media="screen" href="bootstrap.css" />
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Please type in your password</legend>
+            User: <input type="text" id="username" /><br />
+            Pass: <input type="password" id="password" />
+        </fieldset>
+    </form>
+    <p>Emails and the words "password", "god" and "123456" have been blocked by
+    the custom rules. So if you try an email or the password contains one of
+    the blocked words, then the password will be marked as weak.</p>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="pwstrength.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            "use strict";
+            var $password = $(':password').pwstrength(),
+                common_words = ["password", "god", "123456"];
+
+            $password.pwstrength("addRule", "notEmail", function (options, word, score) {
+                return word.match(/^([\w\!\#$\%\&\'\*\+\-\/\=\?\^\`{\|\}\~]+\.)*[\w\!\#$\%\&\'\*\+\-\/\=\?\^\`{\|\}\~]+@((((([a-z0-9]{1}[a-z0-9\-]{0,62}[a-z0-9]{1})|[a-z])\.)+[a-z]{2,6})|(\d{1,3}\.){3}\d{1,3}(\:\d{1,5})?)$/i) && score;
+            }, -100, true);
+
+            $password.pwstrength("addRule", "commonWords", function (options, word, score) {
+                var result = false;
+                $.each(common_words, function (i, item) {
+                    var re = new RegExp(item, "gi");
+                    if (word.match(re)) {
+                        result = score;
+                    }
+                });
+                return result;
+            }, -500, true);
+        });
+    </script>
+</body>
+</html>
