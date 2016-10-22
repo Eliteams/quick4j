@@ -9,12 +9,12 @@
 作为一个 seed(种子) 项目，你可以基于它，快速搭建项目原型，并开发。
 
 
-## Roadmap
-> 1.升级 Library  
-> 2.前端模版更新为Angulr  
-> 3.添加命令行创建工具(基于node.js)  
-> 4.重构  
-> more and more
+## 项目情况
+> 此项目本是在3年前，开发新的项目时，采用ssm搭建的一个原型；完成新项目后，本着开源的精神，整理共享出来，帮助后人，这就是现在的quick4j。  
+> 但无心插柳柳成荫，超过500多的forks，几百份求助邮件，每天几十Clones，让我倍感欣慰，为开源贡献了微薄的力量。  
+> 前段时间，由于该项目中包含有IntelliJ IDEA软件的keygen，被GitHub Ban了。删除相关代码后，由于工作太忙，也没有申诉了。  
+> 技术的更替，是值得鼓励的。我是一个喜欢挑战的人，我现在已经转战JavaScript，所以以后也没时间、没精力更新此项目，抱歉大家。  
+> 当然，我喜欢开源软件，正是因为开源，集众人的智慧，技术才会快速发展，加快人类的对未知事物探索。让我们做的更好吧。
 
 
 ## 你可以使用 **quick4j**：
@@ -27,7 +27,8 @@
 
 
 ## How to get/use it
-> * 1、git clone https://github.com/Eliteams/quick4j.git
+> 
+* 1、git clone https://github.com/Eliteams/quick4j.git
 * 2、在MySQL中导入 quick4j/src/test/resources/quick4j.sql 脚本
 * 3、更新 quick4j/src/main/resources/application.properties 中 JDBC Global Setting
 * 4、cd quick4j
@@ -44,7 +45,7 @@
 
 
 ## If you have a better suggestion,Please share out,Let's do better.
-> Author ：starzou  
+> Author ：StarZou  
 > Email  ：starzou@126.com
 
 
@@ -52,4 +53,4 @@
 > Copyright (c) 2016 StarZou.  
 > Licensed under the MIT license.  
 
-> 欢迎 Star，Fork, Create new pull request.
+> Welcome to stars, forks, create new pull request.
