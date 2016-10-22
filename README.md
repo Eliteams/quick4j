@@ -27,7 +27,7 @@
 
 
 ## How to get/use it
-> * 1、git clone https://github.com/starzou/quick4j
+> * 1、git clone https://github.com/Eliteams/quick4j.git
 * 2、在MySQL中导入 quick4j/src/test/resources/quick4j.sql 脚本
 * 3、更新 quick4j/src/main/resources/application.properties 中 JDBC Global Setting
 * 4、cd quick4j
