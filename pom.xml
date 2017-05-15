@@ -43,7 +43,17 @@
                     <skipTests>${skipTests}</skipTests>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
+
+            </plugin>
         </plugins>
+
 
         <!--配置Maven 对resource文件 过滤 -->
         <resources>
@@ -360,6 +370,12 @@
             <version>2.6.2</version>
             <type>jar</type>
             <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>springloaded</artifactId>
+            <version>1.2.6.RELEASE</version>
         </dependency>
 
     </dependencies>

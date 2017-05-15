@@ -21,6 +21,7 @@ public class CommonController {
     @RequestMapping("index")
     public String index(HttpServletRequest request) {
         return "index";
+        //1
     }
 
 }
